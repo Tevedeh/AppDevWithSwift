@@ -1,26 +1,23 @@
 //
 //  ViewController.swift
-//  IBBasics
+//  InterfaceBuilderBasics
 //
-//  Created by Tristan Anderson on 6/8/18.
+//  Created by Tristan Anderson on 6/9/18.
 //  Copyright © 2018 Tristan Anderson. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var myButton: UIButton!
+   
+    @IBOutlet weak var label: UILabel!
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        print("Button pressed")
-        let label = UILabel(frame: CGRect(x: 16, y: 16, width: 200, height: 44))
-        view.addSubview(label)
-        
+    @IBAction func changeLabel(_ sender: Any) {
+        label.text = "Worked"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myButton.setTitleColor(.red, for: .normal)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
