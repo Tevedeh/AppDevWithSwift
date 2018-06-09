@@ -1,3 +1,11 @@
+//
+//  ViewController.swift
+//  IBBasics
+//
+//  Created by Tristan Anderson on 6/8/18.
+//  Copyright © 2018 Tristan Anderson. All rights reserved.
+//
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -5,19 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let sample = "sample"
-        print(sample)
-        
-        if false {
-            print("Will this line of code ever be reached?")
-            someMethod()
-        }
-        
-        
-    }
-    
-    func someMethod() {
-
     }
 
     override func didReceiveMemoryWarning() {
