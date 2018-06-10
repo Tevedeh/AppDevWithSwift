@@ -12,16 +12,20 @@ var light = true
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var lightSwitch: UIButton!
+    
     @IBAction func press(_ sender: Any) {
         light = !light
-        
+        update()
     }
     
     func update(){
         
         if(light){
+            lightSwitch.setTitle("Turn off", for: .normal)
             view.backgroundColor = .white
         } else{
+            lightSwitch.setTitle("Turn on", for: .normal)
             view.backgroundColor = .black
         }
         
