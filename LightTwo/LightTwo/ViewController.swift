@@ -12,7 +12,6 @@ var light = true
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var lightSwitch: UIButton!
     
     @IBAction func press(_ sender: Any) {
         light = !light
@@ -21,19 +20,13 @@ class ViewController: UIViewController {
     
     func update(){
         
-        if(light){
-            lightSwitch.setTitle("Turn off", for: .normal)
-            view.backgroundColor = .white
-        } else{
-            lightSwitch.setTitle("Turn on", for: .normal)
-            view.backgroundColor = .black
-        }
+        view.backgroundColor = light ? .white : .black
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        update()
     }
 
     override func didReceiveMemoryWarning() {
