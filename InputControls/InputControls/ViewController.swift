@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CommonInputControls
+//  InputControls
 //
 //  Created by Tristan Anderson on 6/12/18.
 //  Copyright © 2018 Tristan Anderson. All rights reserved.
