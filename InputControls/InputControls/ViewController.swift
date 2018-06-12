@@ -10,12 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mybutton: UIButton!
     @IBOutlet weak var mySlider: UISlider!
  
     @IBOutlet weak var mySwitch: UISwitch!
     
+    @IBOutlet weak var myLabel: UILabel!
+    @IBAction func respondToTapGesture(_ sender: UITapGestureRecognizer) {
+        let location = sender.location(in: view)
+        print(location)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        myLabel.text = "On"
+        mybutton.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,8 +35,10 @@ class ViewController: UIViewController {
     @IBAction func switched(_ sender: UISwitch) {
         if(sender.isOn){
             print("On")
+            myLabel.text = "On"
         } else {
             print("Off")
+            myLabel.text = "Off"
         }
         
         print("Slider: \(mySlider.value)")
