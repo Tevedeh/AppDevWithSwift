@@ -5,10 +5,18 @@
  */
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+var count = 0
+
+for letter in alphabet {
+    if(count%2 == 0){
+        print(letter)
+    }
+    count += 1
+}
 
 /*:
  Create a `[String: String]` dictionary where the keys are names of states and the values are their capitals. Include at least three key/value pairs in your collection, with one of them being your home state. Now loop through this dictionary again, printing out the keys and values in a sentence, but add an if statement that will check if the current iteration is your home state. If it is, print("I found my home!") and break out of the loop.
  */
-
+//nothing new
 
 //: [Previous](@previous)  |  page 5 of 6  |  [Next: App Exercise - Finding Movements](@next)

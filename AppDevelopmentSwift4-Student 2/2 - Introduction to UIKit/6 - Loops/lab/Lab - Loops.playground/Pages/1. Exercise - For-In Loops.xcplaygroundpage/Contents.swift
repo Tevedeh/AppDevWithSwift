@@ -18,6 +18,10 @@ for letter in alphabet.characters{
 /*:
  Create a `[String: String]` dictionary, where the keys are names of states and the values are their capitals. Include at least three key/value pairs in your collection, then use a for-in loop to iterate over the pairs and print out the keys and values in a sentence.
  */
+let states: [String: String] = ["Minnesota": "St. Paul", "Iowa": "Des Moines", "Other": "Other City"]
 
+for state in states {
+    print("The capital of \(state.key) is \(state.value)")
+}
 
 //: page 1 of 6  |  [Next: App Exercise - Movements](@next)
