@@ -33,4 +33,7 @@ var prices = ["Chips": 2.99, "Donuts": 1.89, "Juice": 3.99, "Apple": 0.50, "Bana
 var stock = ["Chips": 4, "Donuts": 0, "Juice": 12, "Apple": 6, "Banana": 6, "Broccoli": 3]
 
 
+func itemCost(_ item: String) -> Double {
+    return prices[item]!
+}
 //: [Previous](@previous)  |  page 3 of 6  |  [Next: App Exercise - Food Functions](@next)
